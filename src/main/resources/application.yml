@@ -1,0 +1,27 @@
+
+
+server:
+  port: 8181
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/geoni4?serverTimezone=UTC&characterEncoding=UTF-8
+    username: geoni4
+    password: Djdrjsl4$4
+
+  jpa:
+    show-sql: true
+    hibernate:           
+      ddl-auto: create-drop
+
+
+  devtools:
+    livereload:
+      enabled: true
+
